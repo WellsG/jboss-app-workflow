@@ -34,3 +34,14 @@
 image: "wguo/jboss-7.1.1:<image sha>"
 ````
 * sudo docker-compose up
+* access container 
+````
+sudo docker-compose exec jboss-as sh
+sudo docker-compose exec mysql sh
+````
+* start app
+````
+sudo docker-compose exec jboss-as sh
+/var/lib/jboss-as/bin/init_maitai.sh
+/opt/jboss/jboss-as-7.1.1.Final/bin/maitai_start.sh
+````
