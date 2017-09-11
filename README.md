@@ -26,9 +26,7 @@
     └── standalone-full.xml
 ````
 
-[JBoss as images](https://github.com/WellsG/jboss-as-docker) 
-
-* build jboss as image
+* build [jboss-as image](https://github.com/WellsG/jboss-as-docker)
 * update docker-compose.yml 
 ````
 image: "wguo/jboss-7.1.1:<image sha>"
