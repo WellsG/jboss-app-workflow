@@ -42,6 +42,6 @@ sudo docker-compose exec mysql sh
 * start app
 ````
 sudo docker-compose exec jboss-as sh
-/var/lib/jboss-as/bin/init_maitai.sh
-/opt/jboss/jboss-as-7.1.1.Final/bin/maitai_start.sh
+sh-4.2# /var/lib/jboss-as/bin/init_maitai.sh
+sh-4.2# /opt/jboss/jboss-as-7.1.1.Final/bin/maitai_start.sh
 ````
