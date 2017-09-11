@@ -1,0 +1,35 @@
+version: '2'
+services:
+  mysql:
+    image: "mysql:5.5"
+    networks:
+     - jboss-as
+    volumes:
+     - ./db:/var/lib/data
+     - ./db:/docker-entrypoint-initdb.d/
+    environment:
+     - MYSQL_DATABASE=maitai
+     - MYSQL_USER=maitai
+     - MYSQL_PASSWORD=maitai_password
+     - MYSQL_ROOT_PASSWORD=password
+     - MYSQL_GENERAL_LOG=1
+    ports:
+     - "3306:3306"
+
+  jboss-as:
+    image: "wguo/jboss-7.1.1:f575eb0cad91"
+    networks:
+     - jboss-as
+    ports:
+     - "8080:8080"
+    volumes:
+     - ./jboss-as:/var/lib/jboss-as
+     - ./jboss-app:/var/lib/jboss-app
+    links:
+     - mysql
+    environment:
+     - DEBUG=true
+
+networks:
+  jboss-as:
+    driver: bridge

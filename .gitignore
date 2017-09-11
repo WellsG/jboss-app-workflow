@@ -1,0 +1,5 @@
+jboss-app/maitai-server-ear.ear
+jboss-as/standalone-full.xml
+jboss-as/maitai/etc/maitai.conf
+db/maitai_docker.sql
+
