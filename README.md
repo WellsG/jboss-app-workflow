@@ -32,6 +32,13 @@
 image: "wguo/jboss-7.1.1:<image sha>"
 ````
 * sudo docker-compose up
+````
+[~/docker/jboss-7.1.1.Final-docker] (master) $ sudo docker-compose ps
+             Name                          Command             State                Ports               
+-------------------------------------------------------------------------------------------------------
+jboss711finaldocker_jboss-as_1   tail -f /dev/null             Up      0.0.0.0:8080->8080/tcp, 9990/tcp 
+jboss711finaldocker_mysql_1      docker-entrypoint.sh mysqld   Up      0.0.0.0:3306->3306/tcp
+````
 * access container 
 ````
 sudo docker-compose exec jboss-as sh
