@@ -32,5 +32,5 @@
 * update docker-compose.yml 
 ````
 image: "wguo/jboss-7.1.1:<image sha>"
-```
+````
 * sudo docker-compose up
