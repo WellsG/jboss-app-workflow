@@ -1,5 +1,5 @@
 #! /bin/sh
-APP_REPO="<>/jboss-7.1.1.Final-docker"
+APP_REPO="$1/jboss-7.1.1.Final-docker"
 
 mkdir jboss-as/maitai/etc
 wget -O jboss-as/maitai/etc/maitai.conf $APP_REPO/jboss-as/maitai.conf
