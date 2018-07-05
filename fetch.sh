@@ -1,4 +1,12 @@
 #! /bin/sh
+
+if [ $1 ]; then
+   echo ""
+else
+   echo "Please specify the app_repo."
+   exit
+fi
+
 APP_REPO="$1/jboss-7.1.1.Final-docker"
 
 mkdir jboss-as/maitai/etc
