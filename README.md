@@ -27,12 +27,7 @@
 ````
 * Get sepcific config and war
 ````
-mkdir jboss-as/maitai/etc
-wget -O jboss-as/maitai/etc/maitai.conf http://<>/jboss-as/maitai.conf
-wget -O jboss-as/standalone-full.xml http://<>/jboss-as/standalone-full.xml
-
-mkdir jboss-app
-wget -O jboss-app/maitai-server-ear.ear http://<>/jboss-app/maitai-server-ear.ear
+./fetch.sh
 ````
 
 * build [jboss-as image](https://github.com/WellsG/jboss-as-docker)
