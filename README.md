@@ -54,3 +54,11 @@ sudo docker-compose exec jboss-as sh
 sh-4.2# /var/lib/jboss-as/bin/init_maitai.sh
 sh-4.2# /opt/jboss/jboss-as-7.1.1.Final/bin/maitai_start.sh
 ````
+
+* fetch the source code
+* commit the changes and run the maven build
+````
+mvn clean install -P devLocal -Dmaven.test.skip=true
+````
+* copy the .ear into jboss deployment 
+
