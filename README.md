@@ -30,10 +30,10 @@
 ./fetch.sh
 ````
 
-* build [jboss-as image](https://github.com/WellsG/jboss-as-docker)
+* build [jboss-as image](https://github.com/WellsG/jboss-as-docker)  or ref the remote image: [jind0001/jboss-as:7.1.1](https://cloud.docker.com/repository/docker/jind0001/jboss-as)
 * update docker-compose.yml 
 ````
-image: "wguo/jboss-7.1.1:<image sha>"
+image: "wguo/jboss-7.1.1:<image sha>"  or image: "jind0001/jboss-as:7.1.1"
 ````
 * sudo docker-compose up
 ````
